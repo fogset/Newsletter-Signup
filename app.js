@@ -17,7 +17,10 @@ app.post("/", function(req, res){
     members:[
       {
         email_address: email,
-        status: "subscribed"
+        status: "subscribed",
+        merge_field:{
+
+        }
       }
     ]
   }
@@ -27,7 +30,3 @@ app.post("/", function(req, res){
 app.listen(3000, function() {
   console.log("Server is running on port 3000.");
 })
-
-//API Key
-//7ab3fd7a5144327dc7410630346661f9-us7
-//Audience id 66c53ff11c
